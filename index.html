@@ -11,14 +11,16 @@
     <!-- ******** For the code below, NOTHING HAS CHANGED WITH v1.4.2  ******** -->
 	<a-scene background="color: #FFFFFF">
 		<!-- Camera Rig -->
-		<a-entity movement-controls="speed: 0.15" position="0 0 6">
-			<!-- Camera -->
-			<a-entity camera position="0 1.6 0"
-					  look-controls="pointerLockEnabled: true">
-				<a-cursor></a-cursor>
-			</a-entity>
-		</a-entity>
 		
+<a-entity id="rig"
+          movement-controls="controls: gamepad,keyboard,nipple"
+          nipple-controls="mode: static">
+  <a-entity camera
+            position="0 1.6 0"
+            look-controls="pointerLockEnabled: true">
+  </a-entity>
+</a-entity>
+	
 		<!-- Ground -->
 		<a-plane color="#DDDDDD" shader="flat" rotation="-90 0 0" scale="8 4 1">
 		</a-plane>
