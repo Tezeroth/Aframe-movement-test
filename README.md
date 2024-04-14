@@ -1,3 +1,3 @@
-still incompatible with touch controllers on quest browsers
+still incompatible with touch controllers on quest browser
 
 
